@@ -1,7 +1,8 @@
 {
-  "name": "aoo",
+  "homepage": "https://Fentrai.github.io/Fentrai.github.io",
+  "name": "src",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -14,14 +15,12 @@
   "scripts": {
     "start": "react-scripts start",
     "watch": "npx tailwindcss -i ./src/style.css -o ./src/output.css --watch",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage":"https://Fentrai.github.io/Fentrai.github.io",
-
   "eslintConfig": {
     "extends": [
       "react-app",
